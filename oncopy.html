@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oncopy assignment</title>
+    <style>
+        .first_div{
+            border:5px solid rgb(143, 10, 204); 
+            height: 500px;
+            width: 500px;
+            position:relative;
+        } 
+        .shadow-drop-2-center{
+            background-color: rgb(255, 47, 206);
+            padding: 20px;
+            margin: 20px;
+            position: absolute; 
+            bottom: 20px;
+            right: 20px; 
+            display: none; 
+            
+        } 
+        .shadow-drop-2-center{-webkit-animation:shadow-drop-2-center .4s cubic-bezier(.25,.46,.45,.94) both;animation:shadow-drop-2-center .4s cubic-bezier(.25,.46,.45,.94) both}
+        @-webkit-keyframes shadow-drop-2-center{0%{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-box-shadow:0 0 0 0 transparent;box-shadow:0 0 0 0 transparent}100%{-webkit-transform:translateZ(50px);transform:translateZ(50px);-webkit-box-shadow:0 0 20px 0 rgba(0,0,0,.35);box-shadow:0 0 20px 0 rgba(0,0,0,.35)}}@keyframes shadow-drop-2-center{0%{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-box-shadow:0 0 0 0 transparent;box-shadow:0 0 0 0 transparent}100%{-webkit-transform:translateZ(50px);transform:translateZ(50px);-webkit-box-shadow:0 0 20px 0 rgba(0,0,0,.35);box-shadow:0 0 20px 0 rgba(0,0,0,.35)}}
+   
+    </style>
+</head>
+<body>
+    <div class="first_div" id="div1" oncopy="fun1();">“I have had to mature to understand what lifelong learning means in practice. When we are faced with a need to change ourselves, it can seem quite confusing and frustrating at the time. But each time we change, we are moving step by step towards a better world. I have also learned as a leader that empathy and courage are very valuable assets. 
+    <button  class="shadow-drop-2-center" oncopy="fun1();" id="btn">copy paste</button></div>
+    <script src="oncopy.js"></script>
+</body>
+</html>
